@@ -185,7 +185,6 @@ def build_pages():
       <a class="btn ghost light" href="#explore">{T("सेवाएँ देखें ↓", "See our services ↓")}</a>
     </div>
   </div>
-  <img class="hero2-img" src="assets/img/mela-hero.svg" alt="" width="1200" height="420">
 </section>
 <div class="wrap">
   <section class="countdown" id="next" aria-live="polite"><p class="muted">{T("अगली स्नान तिथि लोड हो रही है…", "Loading the next bath date…")}</p></section>

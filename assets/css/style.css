@@ -190,3 +190,8 @@ pre{background:var(--surface2);border:1px solid var(--line);border-radius:10px;p
 .tile small{color:var(--muted);font-size:.85rem;line-height:1.35}
 .trustline{text-align:center;color:var(--muted);font-size:.92rem;margin:22px 0 6px}
 @media (max-width:699px){.countdown .grid{display:flex;overflow-x:auto;gap:10px;scroll-snap-type:x mandatory;padding-bottom:6px}.countdown .card{flex:0 0 78%;scroll-snap-align:start}}
+
+/* home v3: photo hero */
+.hero2{background:linear-gradient(180deg,rgba(38,20,58,.72) 0%,rgba(38,20,58,.35) 42%,rgba(38,20,58,0) 70%),url(../img/mela-hero.webp) center 78%/cover no-repeat,#5b3a6e;min-height:clamp(480px,78vw,620px);display:flex;align-items:flex-start;justify-content:center;padding-top:34px;padding-bottom:0}
+.hero2-text{padding-bottom:0}
+@media (min-width:900px){.hero2{min-height:600px}}

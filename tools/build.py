@@ -178,11 +178,11 @@ def build_pages():
 <section class="hero2">
   <div class="wrap hero2-text">
     <p class="kicker">{T("माघ मेला 2027 · प्रयागराज संगम", "Magh Mela 2027 · Prayagraj Sangam")}</p>
-    <h1>{T("माघ मेला जाना है? पूरा प्लान हम बना देंगे।", "Going to Magh Mela? We will plan the whole trip.")}</h1>
-    <p class="lead">{T("तिथि, भीड़, रास्ता, ठहरना और सुरक्षा, सब एक जगह और बिना झंझट।", "Dates, crowds, routes, stay and safety, all in one place and without the hassle.")}</p>
+    <h1>{T("माघ मेला में आपका स्वागत है", "Welcome to Magh Mela")}</h1>
+    <p class="lead">{T("तिथि, मार्ग, ठहराव और सुरक्षा, एक ही स्थान पर।", "Dates, routes, stay and safety, in one place.")}</p>
     <div class="cta-row">
       <a class="btn big-cta" href="plan.html">{T("अपनी यात्रा की योजना बनाएँ", "Plan my trip")}</a>
-      <a class="btn ghost light" href="#explore">{T("सब कुछ देखें ↓", "Explore everything ↓")}</a>
+      <a class="btn ghost light" href="#explore">{T("सेवाएँ देखें ↓", "See our services ↓")}</a>
     </div>
   </div>
   <img class="hero2-img" src="assets/img/mela-hero.svg" alt="" width="1200" height="420">

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="hi" data-lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>सुरक्षा और ठगी से बचाव | Safety and scam protection | Kumbhayatra</title>
+<meta name="description" content="माघ मेला में ठगी से बचाव, रेट गाइड, आपातकालीन नंबर और परिवार सुरक्षा कार्ड। Scam protection, price guide, emergency numbers and a family safety card for Magh Mela.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co; base-uri 'none'; form-action 'self'">
+<meta name="theme-color" content="#b84e08">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta property="og:title" content="सुरक्षा और ठगी से बचाव | Safety and scam protection | Kumbhayatra">
+<meta property="og:description" content="Scam protection, price guide, emergency numbers and a family safety card for Magh Mela.">
+<meta property="og:type" content="website">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/vendor/supabase.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/safety.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="hi">मुख्य सामग्री पर जाएँ</span><span class="en">Skip to content</span></a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="34" height="34"><span>कुंभयात्रा<small>Kumbhayatra</small></span></a>
+  <nav class="nav" id="nav" aria-label="Main"><a href="plan.html"><span class="hi">योजना बनाएँ</span><span class="en">Plan my trip</span></a><a href="snan.html"><span class="hi">स्नान तिथियाँ</span><span class="en">Bath dates</span></a><a href="reach.html"><span class="hi">कैसे पहुँचें</span><span class="en">How to reach</span></a><a href="places.html"><span class="hi">स्थान</span><span class="en">Places</span></a><a href="services.html"><span class="hi">ठहरना और सेवाएँ</span><span class="en">Stay and services</span></a><a href="safety.html"><span class="hi">सुरक्षा</span><span class="en">Safety</span></a><a href="help.html"><span class="hi">मदद</span><span class="en">Help</span></a></nav>
+  <button class="iconbtn" id="langbtn" type="button" aria-label="Change language">English</button>
+  <button class="iconbtn menubtn" id="menubtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+</div></header>
+<div class="noticebar" id="noticebar" hidden></div>
+<main id="main">
+
+<div class="wrap">
+  <h1><span class="hi">सुरक्षा और ठगी से बचाव</span><span class="en">Safety and scam protection</span></h1>
+  <h2><span class="hi">ठगी से बचने के छह नियम</span><span class="en">Six rules against scams</span></h2>
+  <div class="grid c2" id="scams"></div>
+  <h2><span class="hi">रेट गाइड</span><span class="en">Price guide</span></h2>
+  <div id="prices" class="grid c3"></div>
+  <h2><span class="hi">आपातकालीन नंबर</span><span class="en">Emergency numbers</span></h2>
+  <div class="card"><p><strong>112</strong> <span class="hi">पुलिस / सामान्य आपातकाल</span><span class="en">Police / general emergency</span> · <strong>108</strong> <span class="hi">एम्बुलेंस</span><span class="en">Ambulance</span></p>
+  <p class="muted small"><span class="hi">मेला क्षेत्र के स्थानीय हेल्पलाइन नंबर हर साल आधिकारिक नोटिस में जारी होते हैं। बिछड़ने पर खोया-पाया केंद्र पर जाएँ।</span><span class="en">Local Mela helpline numbers are published in official notices each year. If separated, go to a Khoya-Paya (lost-and-found) centre.</span></p></div>
+
+  <h2><span class="hi">परिवार सुरक्षा कार्ड</span><span class="en">Family safety card</span></h2>
+  <form id="fam-form" class="card noprint" novalidate>
+    <p class="muted small"><span class="hi">यह जानकारी सिर्फ आपके फोन में रहती है, कहीं भेजी नहीं जाती। भरकर प्रिंट करें या स्क्रीनशॉट रखें।</span><span class="en">This stays on your phone and is never sent anywhere. Fill it in, then print or screenshot.</span></p>
+    <div class="fgrid">
+      <div><label for="f-name"><span class="hi">समूह प्रमुख का नाम</span><span class="en">Group leader name</span></label><input id="f-name" autocomplete="off"></div>
+      <div><label for="f-phone"><span class="hi">फोन नंबर</span><span class="en">Phone number</span></label><input id="f-phone" inputmode="tel" autocomplete="off"></div>
+      <div><label for="f-phone2"><span class="hi">दूसरा संपर्क नंबर</span><span class="en">Second contact number</span></label><input id="f-phone2" inputmode="tel" autocomplete="off"></div>
+      <div><label for="f-stay"><span class="hi">ठहरने की जगह और पता</span><span class="en">Where you are staying</span></label><input id="f-stay" autocomplete="off"></div>
+    </div>
+    <label for="f-meet"><span class="hi">बिछड़ने पर मिलने की जगह</span><span class="en">Meeting spot if separated</span></label><input id="f-meet" autocomplete="off">
+    <div class="cta-row"><button class="btn" type="submit"><span class="hi">कार्ड बनाएँ</span><span class="en">Create card</span></button></div>
+  </form>
+  <div id="fam-card"></div>
+
+  <h2><span class="hi">शिकायत या ठगी की सूचना</span><span class="en">Report an issue or scam</span></h2>
+  <form id="report-form" class="card noprint" novalidate>
+    <label for="rp-reason"><span class="hi">समस्या का प्रकार</span><span class="en">Type of problem</span></label>
+    <select id="rp-reason"><option value="overcharging"><span class="hi">ज्यादा पैसे माँगे</span><span class="en">Overcharging</span></option><option value="fake"><span class="hi">फर्जी / झूठा दावा</span><span class="en">Fake or false claim</span></option><option value="rude"><span class="hi">बदसलूकी</span><span class="en">Rude behaviour</span></option><option value="unsafe"><span class="hi">असुरक्षित</span><span class="en">Unsafe</span></option><option value="other"><span class="hi">अन्य</span><span class="en">Other</span></option></select>
+    <label for="rp-details"><span class="hi">क्या हुआ? (नाम, जगह, किराया आदि)</span><span class="en">What happened? (name, place, amount, etc.)</span></label>
+    <textarea id="rp-details" maxlength="800"></textarea>
+    <label for="rp-contact"><span class="hi">आपका संपर्क (वैकल्पिक)</span><span class="en">Your contact (optional)</span></label><input id="rp-contact" maxlength="80" autocomplete="off">
+    <div class="cta-row"><button class="btn" type="submit"><span class="hi">सूचना भेजें</span><span class="en">Send report</span></button></div>
+    <div id="rp-msg"></div>
+  </form>
+</div>
+
+</main>
+<footer><div class="wrap">
+  <div class="links"><a href="itineraries.html"><span class="hi">यात्रा योजनाएँ</span><span class="en">Itineraries</span></a><a href="checklist.html"><span class="hi">तैयारी सूची</span><span class="en">Checklist</span></a><a href="list-business.html"><span class="hi">अपना व्यवसाय जोड़ें</span><span class="en">List your business</span></a><a href="business.html"><span class="hi">व्यवसाय लॉगिन</span><span class="en">Business login</span></a><a href="privacy.html"><span class="hi">गोपनीयता</span><span class="en">Privacy</span></a><a href="terms.html"><span class="hi">शर्तें</span><span class="en">Terms</span></a></div>
+  <p><span class="hi">कुंभयात्रा एक स्वतंत्र यात्रा-मार्गदर्शिका है। यह मेला प्राधिकरण या उत्तर प्रदेश सरकार से संबद्ध नहीं है। यात्रा से पहले आधिकारिक सूचनाएँ जरूर देखें।</span><span class="en">Kumbhayatra is an independent travel guide. It is not affiliated with the Mela Pradhikaran or the Government of Uttar Pradesh. Always check official notices before you travel.</span></p>
+  <p>© <span id="year">2026</span> Kumbhayatra · <a href="admin.html" rel="nofollow">Admin</a></p>
+</div></footer>
+</body>
+</html>

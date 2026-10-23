@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="hi" data-lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ठहरना और सेवाएँ | Stay and services | Kumbhayatra</title>
+<meta name="description" content="प्रयागराज में सत्यापित ठहरने, नाव और टैक्सी की सूची। Verified stays, boats and taxis in Prayagraj.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co; base-uri 'none'; form-action 'self'">
+<meta name="theme-color" content="#b84e08">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta property="og:title" content="ठहरना और सेवाएँ | Stay and services | Kumbhayatra">
+<meta property="og:description" content="Verified stays, boats and taxis in Prayagraj.">
+<meta property="og:type" content="website">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/vendor/supabase.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/services.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="hi">मुख्य सामग्री पर जाएँ</span><span class="en">Skip to content</span></a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="34" height="34"><span>कुंभयात्रा<small>Kumbhayatra</small></span></a>
+  <nav class="nav" id="nav" aria-label="Main"><a href="plan.html"><span class="hi">योजना बनाएँ</span><span class="en">Plan my trip</span></a><a href="snan.html"><span class="hi">स्नान तिथियाँ</span><span class="en">Bath dates</span></a><a href="reach.html"><span class="hi">कैसे पहुँचें</span><span class="en">How to reach</span></a><a href="places.html"><span class="hi">स्थान</span><span class="en">Places</span></a><a href="services.html"><span class="hi">ठहरना और सेवाएँ</span><span class="en">Stay and services</span></a><a href="safety.html"><span class="hi">सुरक्षा</span><span class="en">Safety</span></a><a href="help.html"><span class="hi">मदद</span><span class="en">Help</span></a></nav>
+  <button class="iconbtn" id="langbtn" type="button" aria-label="Change language">English</button>
+  <button class="iconbtn menubtn" id="menubtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+</div></header>
+<div class="noticebar" id="noticebar" hidden></div>
+<main id="main">
+
+<div class="wrap">
+  <h1><span class="hi">ठहरना और स्थानीय सेवाएँ</span><span class="en">Stay and local services</span></h1>
+  <p class="muted"><span class="hi">सिर्फ वही व्यवसाय दिखते हैं जिनकी पहचान और फोन हमने जाँचे हैं। रेट हमेशा बात करके पहले पक्का करें।</span><span class="en">Only businesses whose identity and phone we have checked are shown. Always confirm the rate before you commit.</span></p>
+  <div class="tabs" id="s-tabs" role="tablist"></div>
+  <div class="fgrid noprint" id="s-filters">
+    <div><label for="s-area"><span class="hi">इलाका</span><span class="en">Area</span></label><select id="s-area"><option value=""><span class="hi">सभी</span><span class="en">All</span></option></select></div>
+    <div id="s-cap-wrap"><label for="s-cap"><span class="hi">कम से कम कितने लोग</span><span class="en">Minimum group size</span></label><input id="s-cap" type="number" inputmode="numeric" min="1" max="100" placeholder="4"></div>
+  </div>
+  <div id="s-list" class="stack"></div>
+  <div class="card"><h3><span class="hi">आप सेवा देते हैं?</span><span class="en">Do you offer a service?</span></h3>
+    <p><span class="hi">अपना ठहरने, नाव या टैक्सी का व्यवसाय सत्यापन के लिए जोड़ें।</span><span class="en">Add your stay, boat or taxi business for verification.</span></p>
+    <a class="btn small" href="list-business.html"><span class="hi">व्यवसाय जोड़ें</span><span class="en">List your business</span></a></div>
+  <p class="hint"><span class="hi">कुंभयात्रा केवल एक डायरेक्टरी है। सेवा, रेट और बुकिंग की जिम्मेदारी संबंधित व्यवसाय की है। 'सत्यापित' का मतलब है कि हमने पहचान और संपर्क जाँचा है, सेवा की गुणवत्ता की गारंटी नहीं।</span><span class="en">Kumbhayatra is only a directory. Service, rates and bookings are the business's responsibility. 'Verified' means we checked identity and contact details, not a guarantee of service quality.</span></p>
+</div>
+
+</main>
+<footer><div class="wrap">
+  <div class="links"><a href="itineraries.html"><span class="hi">यात्रा योजनाएँ</span><span class="en">Itineraries</span></a><a href="checklist.html"><span class="hi">तैयारी सूची</span><span class="en">Checklist</span></a><a href="list-business.html"><span class="hi">अपना व्यवसाय जोड़ें</span><span class="en">List your business</span></a><a href="business.html"><span class="hi">व्यवसाय लॉगिन</span><span class="en">Business login</span></a><a href="privacy.html"><span class="hi">गोपनीयता</span><span class="en">Privacy</span></a><a href="terms.html"><span class="hi">शर्तें</span><span class="en">Terms</span></a></div>
+  <p><span class="hi">कुंभयात्रा एक स्वतंत्र यात्रा-मार्गदर्शिका है। यह मेला प्राधिकरण या उत्तर प्रदेश सरकार से संबद्ध नहीं है। यात्रा से पहले आधिकारिक सूचनाएँ जरूर देखें।</span><span class="en">Kumbhayatra is an independent travel guide. It is not affiliated with the Mela Pradhikaran or the Government of Uttar Pradesh. Always check official notices before you travel.</span></p>
+  <p>© <span id="year">2026</span> Kumbhayatra · <a href="admin.html" rel="nofollow">Admin</a></p>
+</div></footer>
+</body>
+</html>

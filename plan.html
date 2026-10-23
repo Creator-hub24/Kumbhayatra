@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="hi" data-lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>यात्रा योजना | Plan my trip | Kumbhayatra</title>
+<meta name="description" content="अपने शहर, लोगों और दिनों के हिसाब से माघ मेला यात्रा की योजना बनाएँ। Plan your Magh Mela trip by city, group and days.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co; base-uri 'none'; form-action 'self'">
+<meta name="theme-color" content="#b84e08">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta property="og:title" content="यात्रा योजना | Plan my trip | Kumbhayatra">
+<meta property="og:description" content="Plan your Magh Mela trip by city, group and days.">
+<meta property="og:type" content="website">
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/vendor/supabase.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/plan.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main"><span class="hi">मुख्य सामग्री पर जाएँ</span><span class="en">Skip to content</span></a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" width="34" height="34"><span>कुंभयात्रा<small>Kumbhayatra</small></span></a>
+  <nav class="nav" id="nav" aria-label="Main"><a href="plan.html"><span class="hi">योजना बनाएँ</span><span class="en">Plan my trip</span></a><a href="snan.html"><span class="hi">स्नान तिथियाँ</span><span class="en">Bath dates</span></a><a href="reach.html"><span class="hi">कैसे पहुँचें</span><span class="en">How to reach</span></a><a href="places.html"><span class="hi">स्थान</span><span class="en">Places</span></a><a href="services.html"><span class="hi">ठहरना और सेवाएँ</span><span class="en">Stay and services</span></a><a href="safety.html"><span class="hi">सुरक्षा</span><span class="en">Safety</span></a><a href="help.html"><span class="hi">मदद</span><span class="en">Help</span></a></nav>
+  <button class="iconbtn" id="langbtn" type="button" aria-label="Change language">English</button>
+  <button class="iconbtn menubtn" id="menubtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+</div></header>
+<div class="noticebar" id="noticebar" hidden></div>
+<main id="main">
+
+<div class="wrap">
+  <h1><span class="hi">अपनी यात्रा की योजना बनाएँ</span><span class="en">Plan my trip</span></h1>
+  <p class="muted"><span class="hi">एक मिनट में भरें। हमारी योजना भीड़ का अनुमान, रास्ता, दर्शन-क्रम और तैयारी सूची देगी।</span><span class="en">Fill this in under a minute. Your plan includes expected crowds, the route, a darshan order and a packing list.</span></p>
+  <form id="plan-form" class="card noprint" novalidate>
+    <div class="fgrid">
+      <div><label for="p-city"><span class="hi">आप किस शहर से आ रहे हैं?</span><span class="en">Which city are you coming from?</span></label><select id="p-city"></select></div>
+      <div><label for="p-days"><span class="hi">कितने दिन?</span><span class="en">How many days?</span></label>
+        <select id="p-days"><option value="1"><span class="hi">1 दिन</span><span class="en">1 day</span></option><option value="2" selected><span class="hi">2 दिन</span><span class="en">2 days</span></option><option value="3"><span class="hi">3 दिन</span><span class="en">3 days</span></option></select></div>
+      <div><label for="p-adults"><span class="hi">वयस्क</span><span class="en">Adults</span></label><input id="p-adults" type="number" inputmode="numeric" min="1" max="30" value="2"></div>
+      <div><label for="p-kids"><span class="hi">बच्चे (12 साल से कम)</span><span class="en">Children (under 12)</span></label><input id="p-kids" type="number" inputmode="numeric" min="0" max="30" value="0"></div>
+      <div><label for="p-elders"><span class="hi">बुजुर्ग (60+)</span><span class="en">Elders (60+)</span></label><input id="p-elders" type="number" inputmode="numeric" min="0" max="30" value="0"></div>
+      <div><label for="p-stay"><span class="hi">ठहरना कहाँ पसंद करेंगे?</span><span class="en">Preferred stay</span></label>
+        <select id="p-stay"><option value="any"><span class="hi">कोई भी</span><span class="en">Any</span></option><option value="hotel"><span class="hi">होटल / गेस्ट हाउस</span><span class="en">Hotel / guest house</span></option><option value="dharamshala"><span class="hi">धर्मशाला / डॉर्मिटरी</span><span class="en">Dharamshala / dormitory</span></option><option value="tent"><span class="hi">मेला टेंट</span><span class="en">Mela tent</span></option></select></div>
+    </div>
+    <label for="p-date"><span class="hi">आने की तारीख (पता न हो तो खाली छोड़ें)</span><span class="en">Arrival date (leave blank if not sure)</span></label>
+    <input id="p-date" type="date">
+    <p class="hint" id="p-date-hint"></p>
+    <div class="cta-row"><button class="btn" type="submit"><span class="hi">मेरी योजना बनाएँ</span><span class="en">Build my plan</span></button></div>
+  </form>
+  <div id="plan-msg"></div>
+  <div id="plan-result" class="result" aria-live="polite"></div>
+  <p class="hint noprint"><span class="hi">हम आपकी योजना के विकल्प (शहर, दिन, लोगों की संख्या) गुमनाम रूप से सहेजते हैं ताकि गाइड बेहतर हो सके। कोई नाम या फोन नंबर नहीं लिया जाता।</span><span class="en">We save the plan options (city, days, group size) anonymously to improve the guide. No name or phone number is collected.</span></p>
+</div>
+
+</main>
+<footer><div class="wrap">
+  <div class="links"><a href="itineraries.html"><span class="hi">यात्रा योजनाएँ</span><span class="en">Itineraries</span></a><a href="checklist.html"><span class="hi">तैयारी सूची</span><span class="en">Checklist</span></a><a href="list-business.html"><span class="hi">अपना व्यवसाय जोड़ें</span><span class="en">List your business</span></a><a href="business.html"><span class="hi">व्यवसाय लॉगिन</span><span class="en">Business login</span></a><a href="privacy.html"><span class="hi">गोपनीयता</span><span class="en">Privacy</span></a><a href="terms.html"><span class="hi">शर्तें</span><span class="en">Terms</span></a></div>
+  <p><span class="hi">कुंभयात्रा एक स्वतंत्र यात्रा-मार्गदर्शिका है। यह मेला प्राधिकरण या उत्तर प्रदेश सरकार से संबद्ध नहीं है। यात्रा से पहले आधिकारिक सूचनाएँ जरूर देखें।</span><span class="en">Kumbhayatra is an independent travel guide. It is not affiliated with the Mela Pradhikaran or the Government of Uttar Pradesh. Always check official notices before you travel.</span></p>
+  <p>© <span id="year">2026</span> Kumbhayatra · <a href="admin.html" rel="nofollow">Admin</a></p>
+</div></footer>
+</body>
+</html>

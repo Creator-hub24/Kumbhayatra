@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /business.html
+Sitemap: https://kumbhayatra.com/sitemap.xml

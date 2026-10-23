@@ -175,40 +175,34 @@ def build_pages():
          "माघ मेला प्रयागराज के लिए मुफ्त, भरोसेमंद यात्रा-मार्गदर्शिका।",
          "A free, trustworthy travel guide for Magh Mela, Prayagraj.",
          f"""
-<section class="hero"><div class="wrap">
-  <h1>{T("माघ मेला जाना है? पूरा प्लान हम बना देंगे।", "Going to Magh Mela? We will plan the whole trip.")}</h1>
-  <p class="lead">{T("पहली बार प्रयागराज आ रहे हैं? तिथि, भीड़, रास्ता, ठहरना और सुरक्षा, सब एक जगह और बिना झंझट।",
-                    "First time in Prayagraj? Dates, crowds, routes, stay and safety, all in one place and without the hassle.")}</p>
-  <div class="cta-row">
-    <a class="btn" href="plan.html">{T("अपनी यात्रा की योजना बनाएँ", "Plan my trip")}</a>
-    <a class="btn ghost" href="snan.html">{T("स्नान तिथियाँ और भीड़", "Bath dates and crowds")}</a>
+<section class="hero2">
+  <div class="wrap hero2-text">
+    <p class="kicker">{T("माघ मेला 2027 · प्रयागराज संगम", "Magh Mela 2027 · Prayagraj Sangam")}</p>
+    <h1>{T("माघ मेला जाना है? पूरा प्लान हम बना देंगे।", "Going to Magh Mela? We will plan the whole trip.")}</h1>
+    <p class="lead">{T("तिथि, भीड़, रास्ता, ठहरना और सुरक्षा, सब एक जगह और बिना झंझट।", "Dates, crowds, routes, stay and safety, all in one place and without the hassle.")}</p>
+    <div class="cta-row">
+      <a class="btn big-cta" href="plan.html">{T("अपनी यात्रा की योजना बनाएँ", "Plan my trip")}</a>
+      <a class="btn ghost light" href="#explore">{T("सब कुछ देखें ↓", "Explore everything ↓")}</a>
+    </div>
   </div>
-  <img class="hero-img" src="assets/img/mela-hero.svg" alt="" width="1200" height="420">
-</div></section>
+  <img class="hero2-img" src="assets/img/mela-hero.svg" alt="" width="1200" height="420">
+</section>
 <div class="wrap">
-  <section class="card" id="next" aria-live="polite"><p class="muted">{T("अगली स्नान तिथि लोड हो रही है…", "Loading the next bath date…")}</p></section>
+  <section class="countdown" id="next" aria-live="polite"><p class="muted">{T("अगली स्नान तिथि लोड हो रही है…", "Loading the next bath date…")}</p></section>
 
-  <h2>{T("तीन आसान कदम", "Three easy steps")}</h2>
-  <div class="grid c3">
-    <div class="card"><span class="ico" aria-hidden="true">1️⃣</span><h3>{T("अपनी जानकारी भरें", "Tell us about your group")}</h3><p>{T("कौन से शहर से, कितने लोग, बच्चे या बुजुर्ग हैं या नहीं, कितने दिन।", "Which city, how many people, whether kids or elders are coming, how many days.")}</p></div>
-    <div class="card"><span class="ico" aria-hidden="true">2️⃣</span><h3>{T("सही दिन चुनें", "Pick the right days")}</h3><p>{T("हम भीड़ का अनुमान बताते हैं और शांत दिन सुझाते हैं।", "We show the expected crowd and suggest calmer days.")}</p></div>
-    <div class="card"><span class="ico" aria-hidden="true">3️⃣</span><h3>{T("योजना WhatsApp पर पाएँ", "Get the plan on WhatsApp")}</h3><p>{T("रास्ता, दर्शन-क्रम, ठहरने के विकल्प और सामान की सूची, परिवार को भेजें या प्रिंट करें।", "Route, darshan order, stay options and packing list. Share with family or print.")}</p></div>
+  <h2 id="explore">{T("यहाँ से शुरू करें", "Start here")}</h2>
+  <div class="tiles">
+    <a class="tile" href="plan.html"><span class="ico" aria-hidden="true">🧭</span><b>{T("यात्रा योजना", "Plan my trip")}</b><small>{T("आपके हिसाब से पूरा प्लान", "A plan made for you")}</small></a>
+    <a class="tile" href="snan.html"><span class="ico" aria-hidden="true">📅</span><b>{T("स्नान तिथियाँ", "Bath dates")}</b><small>{T("भीड़ का अनुमान", "Crowd forecast")}</small></a>
+    <a class="tile" href="reach.html"><span class="ico" aria-hidden="true">🚆</span><b>{T("कैसे पहुँचें", "How to reach")}</b><small>{T("आपके शहर से", "From your city")}</small></a>
+    <a class="tile" href="itineraries.html"><span class="ico" aria-hidden="true">🗺️</span><b>{T("1, 2, 3 दिन की योजना", "1, 2, 3 day plans")}</b><small>{T("दर्शन-क्रम", "Darshan order")}</small></a>
+    <a class="tile" href="places.html"><span class="ico" aria-hidden="true">🛕</span><b>{T("दर्शनीय स्थान", "Places to visit")}</b><small>{T("संगम, किला, मंदिर", "Sangam, fort, temples")}</small></a>
+    <a class="tile" href="services.html"><span class="ico" aria-hidden="true">🏨</span><b>{T("ठहरना, नाव, टैक्सी", "Stay, boat, taxi")}</b><small>{T("सत्यापित सेवाएँ", "Verified services")}</small></a>
+    <a class="tile" href="safety.html"><span class="ico" aria-hidden="true">🛡️</span><b>{T("सुरक्षा और ठगी से बचाव", "Safety and scams")}</b><small>{T("रेट, आपातकाल नंबर", "Rates, emergency numbers")}</small></a>
+    <a class="tile" href="checklist.html"><span class="ico" aria-hidden="true">🎒</span><b>{T("क्या साथ ले जाएँ", "What to pack")}</b><small>{T("तैयारी सूची", "Packing list")}</small></a>
   </div>
 
-  <h2>{T("आप हम पर भरोसा क्यों कर सकते हैं", "Why you can trust this guide")}</h2>
-  <div class="grid c3">
-    <div class="card"><h3>{T("पूरी तरह मुफ्त", "Completely free")}</h3><p>{T("तीर्थयात्रियों से कोई शुल्क नहीं। हम सिर्फ सत्यापित स्थानीय सेवाओं को जोड़ते हैं।", "No charge to pilgrims. We only connect you with verified local services.")}</p></div>
-    <div class="card"><h3>{T("फर्जी गाइड से बचाव", "Protection from fake guides")}</h3><p>{T("रेट पहले तय करने की सलाह, ठगी के तरीके और शिकायत का रास्ता।", "Advice to fix rates first, common scams and a way to report.")}</p></div>
-    <div class="card"><h3>{T("सिर्फ सत्यापित सूची", "Verified listings only")}</h3><p>{T("जिन ठहरने, नाव और टैक्सी वालों की हमने जाँच की है, वही दिखते हैं।", "Only stays, boats and taxis we have checked are shown.")}</p></div>
-  </div>
-
-  <h2>{T("और जानें", "Explore")}</h2>
-  <div class="grid c4">
-    <a class="card" href="itineraries.html"><span class="ico" aria-hidden="true">🗺️</span><h3>{T("1, 2, 3 दिन की योजनाएँ", "1, 2, 3 day plans")}</h3></a>
-    <a class="card" href="reach.html"><span class="ico" aria-hidden="true">🚆</span><h3>{T("आपके शहर से कैसे पहुँचें", "How to reach from your city")}</h3></a>
-    <a class="card" href="services.html"><span class="ico" aria-hidden="true">🏨</span><h3>{T("ठहरना, नाव, टैक्सी", "Stay, boat, taxi")}</h3></a>
-    <a class="card" href="checklist.html"><span class="ico" aria-hidden="true">🎒</span><h3>{T("क्या साथ ले जाएँ", "What to pack")}</h3></a>
-  </div>
+  <p class="trustline">{T("✔ पूरी तरह मुफ्त  ·  ✔ सिर्फ सत्यापित सूची  ·  ✔ फर्जी गाइड से बचाव", "✔ Completely free  ·  ✔ Verified listings only  ·  ✔ Protection from fake guides")}</p>
 
   <section class="card" id="biz-cta">
     <h3>{T("प्रयागराज में ठहरने, नाव या टैक्सी की सेवा देते हैं?", "Run a stay, boat or taxi service in Prayagraj?")}</h3>

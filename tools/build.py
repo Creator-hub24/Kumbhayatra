@@ -183,6 +183,7 @@ def build_pages():
     <a class="btn" href="plan.html">{T("अपनी यात्रा की योजना बनाएँ", "Plan my trip")}</a>
     <a class="btn ghost" href="snan.html">{T("स्नान तिथियाँ और भीड़", "Bath dates and crowds")}</a>
   </div>
+  <img class="hero-img" src="assets/img/mela-hero.svg" alt="" width="1200" height="420">
 </div></section>
 <div class="wrap">
   <section class="card" id="next" aria-live="polite"><p class="muted">{T("अगली स्नान तिथि लोड हो रही है…", "Loading the next bath date…")}</p></section>
